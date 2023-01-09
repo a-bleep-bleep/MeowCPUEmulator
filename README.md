@@ -3,10 +3,8 @@ An Emulation of the CPU I am currently designing.
 * Logisim Circuit:
 ![Alt text](images/Main.PNG?raw=true "Logisim Design")
 (Not fully uploading the .circ file until complete)
+Still early in development clearly, due to lack of instruction variety.
 ------------------------------------------------
-
-* Still early in development clearly, due to lack of instruction variety.
-
 * Help 
 ------------------------------------------------
 This is a CPU Emulation, from the current CPU I am designing on Logisim (A Circuit Simulation Program) named MeowCPU.
@@ -40,6 +38,7 @@ IF 4 IS STORED IN E, THIS MEANS A < B.
 With "ADD" and "SUB" Instruction, set the operand to 00000 (5 bits of '0') and the value to 00000000, they will serve as
 a placeholder as they will not effect the outcome as the value after the arithetic has been applied will be either stored in
 C,D,E (depending on which instruction you use). 
+
 ------------------------------------------------
  * The second part of the Instruction is the operand (aka. what to effect).
 ------------------------------------------------
@@ -60,10 +59,11 @@ EG. MOV B, 4
 TOTAL: 0000 00010 00000100
 
 
-A REGISTER: 00001
-B REGISTER: 00010
-------------------------------------------------------------------------------------------------
-* And finally if you havent noticed the last 8 bits are the value which you are going to store. (2'S COMPLEMENT).
+A Register: 00001
+B Register: 00010
+
+And finally if you havent noticed the last 8 bits are the value which you are going to store. (2'S COMPLEMENT).
+
 ------------------------------------------------------------------------------------------------
 * Last Updated: 9/01/23
 ------------------------------------------------
