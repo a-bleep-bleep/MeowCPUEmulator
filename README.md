@@ -1,24 +1,26 @@
 # MeowCPUEmulator
 An Emulation of the CPU I am currently designing.
+* Logisim Circuit:
 ![Alt text](images/Main.PNG?raw=true "Logisim Design")
+(Not fully uploading the .circ file until complete)
 ------------------------------------------------
 
-// Help //
+* Still early in development clearly, due to lack of instruction variety.
 
+* Help 
+------------------------------------------------
 This is a CPU Emulation, from the current CPU I am designing on Logisim (A Circuit Simulation Program) named MeowCPU.
-* yes i know meowcpu is a shit name im no good at naming stuff :c
+yes i know meowcpu is a shit name im no good at naming stuff :c
 
-[*] Still early in developlent (clearly, due to lack of instructions).
-
-// How to use the Emulator //
-
-/*/ Important Make Sure there are whitespaces seperating the INSTRUCTION, OPERAND and VALUE. /*/
+------------------------------------------------
+* How to use the Emulator 
+------------------------------------------------
+* Important Make Sure there are whitespaces seperating the INSTRUCTION, OPERAND and VALUE.
 
 eg. 0000 00000 00000000
         ^     ^
        WHITESPACES
 
-/*/                                                                                         /*/
 Firstly how the CPU works, the CPU Currently has 5 Registers named A,B,C,D,E.
 A and B are the only registers currently being used to store user values.
 C,D,E Registers store the result of A,B. Result varying in which instruction you use. 
@@ -39,8 +41,8 @@ With "ADD" and "SUB" Instruction, set the operand to 00000 (5 bits of '0') and t
 a placeholder as they will not effect the outcome as the value after the arithetic has been applied will be either stored in
 C,D,E (depending on which instruction you use). 
 ------------------------------------------------
-The second part of the Instruction is the operand (aka. what to effect).
-
+ * The second part of the Instruction is the operand (aka. what to effect).
+------------------------------------------------
 EG. MOV A, 4
 0000 = MOV
 00001 = A
@@ -61,7 +63,7 @@ TOTAL: 0000 00010 00000100
 A REGISTER: 00001
 B REGISTER: 00010
 ------------------------------------------------------------------------------------------------
-And finally if you havent noticed the last 8 bits are the value which you are going to store. (2'S COMPLEMENT).
+* And finally if you havent noticed the last 8 bits are the value which you are going to store. (2'S COMPLEMENT).
 ------------------------------------------------------------------------------------------------
-Last Updated: 9/01/23
+* Last Updated: 9/01/23
 ------------------------------------------------
