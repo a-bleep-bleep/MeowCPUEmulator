@@ -1,7 +1,7 @@
 # MeowCPUEmulator
 An Emulation of the CPU I am currently designing.
-
-
+![Alt text](images/Main.PNG?raw=true "Logisim Design")
+------------------------------------------------
 
 // Help //
 
@@ -64,3 +64,4 @@ B REGISTER: 00010
 And finally if you havent noticed the last 8 bits are the value which you are going to store. (2'S COMPLEMENT).
 ------------------------------------------------------------------------------------------------
 Last Updated: 9/01/23
+------------------------------------------------
