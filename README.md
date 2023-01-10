@@ -4,20 +4,22 @@ An Emulation of the CPU I am currently designing.
 ![Alt text](images/Main.PNG?raw=true "Logisim Design")
 (Not fully uploading the .circ file until complete)
 Still early in development clearly, due to lack of instruction variety.
+* Note: The cpu shown in the Logisim image is the latest version of the cpu circuit, the emulator has not yet been redeveloped to that version.
+
 ------------------------------------------------
 * Help 
 ------------------------------------------------
 This is a CPU Emulation, from the current CPU I am designing on Logisim (A Circuit Simulation Program) named MeowCPU.
-yes i know meowcpu is a shit name im no good at naming stuff :c
+yes i know MeowCPU is a shit name im no good at naming stuff :c
 
 ------------------------------------------------
 * How to use the Emulator 
 ------------------------------------------------
-* Important Make Sure there are whitespaces seperating the INSTRUCTION, OPERAND and VALUE.
+* Important Make Sure there are white-space separating the INSTRUCTION, OPERAND and VALUE.
 
 eg. 0000 00000 00000000
         ^     ^
-       WHITESPACES
+       white-space
 
 Firstly how the CPU works, the CPU Currently has 5 Registers named A,B,C,D,E.
 A and B are the only registers currently being used to store user values.
@@ -29,14 +31,14 @@ Here are the following supported opcodes:
     "0001": "ADD" // ADD REGISTER A AND REGISTER B AND STORE RESULT IN REGISTER C
     "0010": "SUB" // SUBTRACT REGISTER A AND REGISTER B AND STORE RESULT IN REGISTER D
     "0100": "CMP" // COMPARE REGISTER A AND REGISTER B AND STORE RESULT IN REGISTER E
-With "CMP" Instruction, there are 3 compartive values that can be stores.
+With "CMP" Instruction, there are 3 comparative values that can be stores.
 Here is a table showing the value of Register E with the meaning of the value.
 IF 2 IS STORED IN E, THIS MEANS A == B.
 IF 1 IS STORED IN E, THIS MEANS A > B.
 IF 4 IS STORED IN E, THIS MEANS A < B.
 
 With "ADD" and "SUB" Instruction, set the operand to 00000 (5 bits of '0') and the value to 00000000, they will serve as
-a placeholder as they will not effect the outcome as the value after the arithetic has been applied will be either stored in
+a placeholder as they will not effect the outcome as the value after the arithmetic has been applied will be either stored in
 C,D,E (depending on which instruction you use). 
 
 ------------------------------------------------
@@ -62,7 +64,7 @@ TOTAL: 0000 00010 00000100
 A Register: 00001
 B Register: 00010
 
-And finally if you havent noticed the last 8 bits are the value which you are going to store. (2'S COMPLEMENT).
+And finally if you haven't noticed the last 8 bits are the value which you are going to store. (2'S COMPLEMENT).
 
 ------------------------------------------------------------------------------------------------
 * Last Updated: 9/01/23
