@@ -2,7 +2,10 @@
 An Emulation of the CPU I am currently designing.
 * Logisim Circuit:
 ![Alt text](images/Main.PNG?raw=true "Logisim Design")
-(Not fully uploading the .circ file until complete)
+* This image shows the Meow CPU executing print to console instructions from a ROM.
+* Decided to print a face "--__--", got bored of "Hello World!" lol.
+------------------------------------------------
+(Not fully uploading the .circ file until the cpu is complete, or has a BIOS.)
 Still early in development clearly, due to lack of instruction variety.
 * Note: The cpu shown in the Logisim image is the latest version of the cpu circuit, the emulator has not yet been redeveloped to that version.
 
